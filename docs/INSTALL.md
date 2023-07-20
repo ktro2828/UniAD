@@ -79,5 +79,20 @@ wget https://github.com/OpenDriveLab/UniAD/releases/download/v1.0/uniad_base_tra
 wget https://github.com/OpenDriveLab/UniAD/releases/download/v1.0/uniad_base_e2e.pth
 ```
 
+## [Optional] Install with poetry
+
+```shell
+# install poetry
+curl -sSL https://install.python-poetry.org | python3 -
+
+# install dependencies
+poetry install
+poetry shell
+
+# install mmdetection3d
+git clone https://github.com/open-mmlab/mmdetection3d.git
+pip install -e mmdetection3d
+```
+
 ---
 -> Next Page: [Prepare The Dataset](./DATA_PREP.md)
